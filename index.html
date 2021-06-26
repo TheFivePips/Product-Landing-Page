@@ -5,18 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+     <!-- main stylesheet -->
+ <link rel="stylesheet" href="stylesheetDesktop.css">
+ <!-- tablet stylesheet -->
+ <link rel="stylesheet" media="(max-width:800px) and (min-width:451px)" 
+  href="tablet.css">
+ <!-- smartphone stylesheet -->
+ <link rel="stylesheet" media="(max-width:450px)" href="smartphone.css">
 </head>
 <body>
     <header id="header">
-        <nav id="nav-bar">//nav bar with three links to other pages
-            <!-- 1.nav <link rel="stylesheet" href=""> --><a href=" "class="nav-link">About</a>
-            <!-- 2.nav <link rel="stylesheet" href=""> --><a href=" "class="nav-link">Pricing</a>
-            <!-- 3.nav <link rel="stylesheet" href=""> --><a href=" "class="nav-link">Contact</a>
-            
+        <nav id="nav-bar">
+            <ul>
+                <li><a href="about.html"class="nav-link">About</a>
+                <li><a href="pricing.html"class="nav-link">Pricing</a>
+                <li><a href="contact.html"class="nav-link">Contact</a>
+                <li><a href="index.html"class="nav-link">Home</a>
+            </ul>
         </nav>
-        <img src="" alt="" id="header-img">//some sort of company logo
+        <img src="images/11179733_hi.webp" alt="A regular old plumbus" id="header-img">
     </header>
-    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/eMJk4y9NGvE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="video-container">
+        <iframe id="video" class="responsive-iframe" width="560" height="315" src="https://www.youtube.com/embed/eMJk4y9NGvE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    
     <form action="https://www.freecodecamp.com/email-submit" method="post" id="form">
         <input type="email" name="" id="email" placeholder="E-mail" required>
         <input type="submit" id="submit" value="submit">
